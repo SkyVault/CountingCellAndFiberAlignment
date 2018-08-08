@@ -13,7 +13,7 @@ def mad(arr):
     return np.median(np.abs(arr - med))
 
 if __name__=="__main__":
-    image = cv2.imread("Photos/test.png")
+    image = cv2.imread("percent4m.tif")
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     edges = cv2.Canny(gray, 50, 150, apertureSize=3)
 
