@@ -1,0 +1,79 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Application	application.py	/^class Application():$/;"	c
+CellCounter	application.py	/^from cell_counter import CellCounter$/;"	i
+CellCounter	cell_counter.py	/^def CellCounter():$/;"	f
+CreateToolTip	tkinter_utils.py	/^class CreateToolTip(object):$/;"	c
+FILTERS	application.py	/^FILTERS = {$/;"	v
+FiberAlignment	application.py	/^from fiberAlignment import FiberAlignment$/;"	i
+FiberAlignment	fiberAlignment.py	/^def FiberAlignment(inputImagePath):$/;"	f
+HoldableButton	tkinter_utils.py	/^class HoldableButton(Button):$/;"	c
+Image	application.py	/^from PIL import ImageTk, Image$/;"	i
+ImageTk	application.py	/^from PIL import ImageTk, Image$/;"	i
+VerticalScrolledFrame	scrollable_frame.py	/^class VerticalScrolledFrame(Frame):$/;"	c
+VerticalScrolledFrame	tkinter_utils.py	/^class VerticalScrolledFrame(Frame):$/;"	c
+__init__	application.py	/^    def __init__(self, size):$/;"	m	class:Application
+__init__	scrollable_frame.py	/^    def __init__(self, parent, *args, **kw):$/;"	m	class:VerticalScrolledFrame
+__init__	tkinter_utils.py	/^    def __init__(self, parent, *args, **kw):$/;"	m	class:VerticalScrolledFrame
+__init__	tkinter_utils.py	/^    def __init__(self, root, text="hold me"):$/;"	m	class:HoldableButton
+__init__	tkinter_utils.py	/^    def __init__(self, widget, text='widget info'):$/;"	m	class:CreateToolTip
+_configure_canvas	scrollable_frame.py	/^        def _configure_canvas(event):$/;"	f	function:VerticalScrolledFrame.__init__
+_configure_canvas	tkinter_utils.py	/^        def _configure_canvas(event):$/;"	f	function:VerticalScrolledFrame.__init__
+_configure_interior	scrollable_frame.py	/^        def _configure_interior(event):$/;"	f	function:VerticalScrolledFrame.__init__
+_configure_interior	tkinter_utils.py	/^        def _configure_interior(event):$/;"	f	function:VerticalScrolledFrame.__init__
+_start	tkinter_utils.py	/^        def _start(event):$/;"	f	function:HoldableButton.__init__
+_stop	tkinter_utils.py	/^        def _stop(event):$/;"	f	function:HoldableButton.__init__
+angle	fiberAlignment.py	/^        angle = np.rad2deg($/;"	v
+applyFilter	application.py	/^    def applyFilter(self):$/;"	m	class:Application
+av	fiberAlignment.py	/^    av = mad(slopes)$/;"	v
+bad	scrollable_frame.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+bad	tkinter_utils.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+cv2	application.py	/^import cv2$/;"	i
+cv2	cell_counter.py	/^import cv2$/;"	i
+cv2	fiberAlignment.py	/^import cv2$/;"	i
+edges	fiberAlignment.py	/^    edges = cv2.Canny(gray, 50, 150, apertureSize=3)$/;"	v
+enter	tkinter_utils.py	/^    def enter(self, event=None):$/;"	m	class:CreateToolTip
+from	scrollable_frame.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+from	tkinter_utils.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+gray	fiberAlignment.py	/^    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)$/;"	v
+hidetip	tkinter_utils.py	/^    def hidetip(self):$/;"	m	class:CreateToolTip
+image	fiberAlignment.py	/^    image = cv2.imread("percent4m.tif")$/;"	v
+import	scrollable_frame.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+import	tkinter_utils.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+is	scrollable_frame.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+is	tkinter_utils.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+isHeld	tkinter_utils.py	/^    def isHeld(self):$/;"	m	class:HoldableButton
+leave	tkinter_utils.py	/^    def leave(self, event=None):$/;"	m	class:CreateToolTip
+lines	fiberAlignment.py	/^    lines = cv2.HoughLinesP(edges, 1, np.pi \/ 180, 100, minLineLength, maxLineGap)$/;"	v
+mad	fiberAlignment.py	/^def mad(arr):$/;"	f
+math	application.py	/^import math$/;"	i
+math	cell_counter.py	/^import math$/;"	i
+math	fiberAlignment.py	/^import math$/;"	i
+matplotlib	application.py	/^import matplotlib$/;"	i
+matplotlib	cell_counter.py	/^import matplotlib$/;"	i
+matplotlib	fiberAlignment.py	/^import matplotlib$/;"	i
+maxLineGap	fiberAlignment.py	/^    maxLineGap = 5$/;"	v
+minLineLength	fiberAlignment.py	/^    minLineLength = 0$/;"	v
+np	application.py	/^import numpy as np$/;"	i
+np	cell_counter.py	/^import numpy as np$/;"	i
+np	fiberAlignment.py	/^import numpy as np$/;"	i
+openImage	application.py	/^    def openImage(self):$/;"	m	class:Application
+practice	scrollable_frame.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+practice	tkinter_utils.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+run	application.py	/^def run():$/;"	f
+schedule	tkinter_utils.py	/^    def schedule(self):$/;"	m	class:CreateToolTip
+showtip	tkinter_utils.py	/^    def showtip(self, event=None):$/;"	m	class:CreateToolTip
+slopes	fiberAlignment.py	/^    slopes = []$/;"	v
+start	tkinter_utils.py	/^    def start(self, event):$/;"	m	class:HoldableButton
+stop	tkinter_utils.py	/^    def stop(self, event):$/;"	m	class:HoldableButton
+theLines	fiberAlignment.py	/^    theLines = []$/;"	v
+tk	application.py	/^import Tkinter as tk$/;"	i
+tk	tkinter_utils.py	/^import Tkinter as tk$/;"	i
+tkFileDialog	application.py	/^import tkFileDialog$/;"	i
+unschedule	tkinter_utils.py	/^    def unschedule(self):$/;"	m	class:CreateToolTip
+x	scrollable_frame.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i
+x	tkinter_utils.py	/^from Tkinter import *   # from x import * is bad practice$/;"	i

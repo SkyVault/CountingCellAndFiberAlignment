@@ -3,6 +3,20 @@ import numpy as np
 import math
 import matplotlib
 
+def FiberAlignment(inputImagePath):
+    # load the image, convert it to grayscale, and blur it slightly
+    image = cv2.imread(inputImagePath)
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    blurred = cv2.GaussianBlur(gray, (3, 3), 0)
+
+    # apply Canny edge detection using a wide threshold, tight
+    # threshold, and automatically determined threshold
+    wide = cv2.Canny(blurred, 10, 200)
+    tight = cv2.Canny(blurred, 225, 250)
+    # auto = auto_canny(blurred)
+    
+    return wide
+
 def mad(arr):
     """ Median Absolute Deviation: a "Robust" version of standard deviation.
         Indices variabililty of the sample.
