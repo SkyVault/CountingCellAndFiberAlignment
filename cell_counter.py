@@ -3,8 +3,8 @@ import numpy as np
 import math
 import matplotlib
 
-def CellCounter():
-    image = cv2.imread("cells.jpg")
+def CellCounter(path="cells.jpg"):
+    image = cv2.imread(path)
     orig = image.copy()
 
     contrast = 400.0

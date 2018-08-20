@@ -6,7 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 Application	application.py	/^class Application():$/;"	c
 CellCounter	application.py	/^from cell_counter import CellCounter$/;"	i
-CellCounter	cell_counter.py	/^def CellCounter():$/;"	f
+CellCounter	cell_counter.py	/^def CellCounter(path="cells.jpg"):$/;"	f
 CreateToolTip	tkinter_utils.py	/^class CreateToolTip(object):$/;"	c
 FILTERS	application.py	/^FILTERS = {$/;"	v
 FiberAlignment	application.py	/^from fiberAlignment import FiberAlignment$/;"	i

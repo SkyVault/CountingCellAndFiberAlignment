@@ -27,6 +27,7 @@ class Application():
         self.outImgData = None
 
         self.root = tk.Tk()
+        self.root.title("DevWindow")
         self.root.geometry("{}x{}".format(size[0], size[1]))
 
         self.inLabel = tk.Label(self.root, text="")
@@ -51,13 +52,18 @@ class Application():
         self.genTypeStringVar = tk.StringVar(self.root)
         self.genTypeStringVar.set(next(iter(FILTERS)))
 
-        self.popdownMenu = tk.OptionMenu(self.BottomFrame, self.genTypeStringVar, *FILTERS)
+        labels = []
+        for key, val in FILTERS.iteritems():
+            labels.append(key)
+
+        self.popdownMenu = tk.OptionMenu(self.BottomFrame, self.genTypeStringVar, *labels)
         self.popdownMenu.pack(side="right")
 
         self.root.mainloop()
 
     def applyFilter(self):
-        result = FiberAlignment(self.inLabel.path)
+        function = FILTERS[self.genTypeStringVar.get()]
+        result = function(self.inLabel.path)
         self.outImgData = Image.fromarray(np.uint8(result))
 
         imgtk = ImageTk.PhotoImage(self.outImgData)
